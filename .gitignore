@@ -1,0 +1,8 @@
+model.safetensors
+*.bin
+*.pt
+*.pth
+__pycache__/
+.gradio/
+venv/
+env/

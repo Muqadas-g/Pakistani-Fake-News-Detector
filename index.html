@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FakeNews Detector | Pakistani Multilingual Fake News Detector</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="wrap nav">
+  <a href="#home" class="brand">
+    <svg viewBox="0 0 40 44"><path d="M20 2 4 8v14c0 10 7 17 16 20 9-3 16-10 16-20V8z" fill="#0b6b3a"/><path d="M12 24l5 5 11-12" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M25 9a6 6 0 1 0 4 9 5 5 0 1 1-4-9z" fill="#fff" opacity=".9"/></svg>
+    <span><b>FakeNews Detector</b><small>Pakistan • Multi-Language • Trustworthy</small></span></a>
+  <div class="links" id="navLinks">
+    <a href="#home" class="act">⌂ Home</a><a href="#about">▥ About</a><a href="#features">☰ Features</a><a href="#how">▤ How It Works</a><a href="#contact">✉ Contact</a></div>
+  <div class="nav-r">
+    <div class="toggle" id="themeToggle" role="button" tabindex="0" aria-label="Toggle light/dark theme"><span class="sun">☀</span><span class="moon">☾</span></div>
+    <a class="gh" href="https://github.com/Muqadas-g" target="_blank" rel="noopener">⌥ GitHub</a>
+    <button class="icon-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</div></nav>
+
+<header class="hero" id="home">
+  <div class="deco" aria-hidden="true">
+    <!-- LEFT: flag, Minar-e-Pakistan, BREAKING NEWS paper -->
+    <svg class="art left" viewBox="0 0 520 400" preserveAspectRatio="xMinYMin meet">
+      <defs>
+        <linearGradient id="gm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b9cfc6"/><stop offset="1" stop-color="#e3ece8"/></linearGradient>
+        <linearGradient id="gf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f7a43"/><stop offset="1" stop-color="#0a5a31"/></linearGradient>
+      </defs>
+      <g class="paper" transform="rotate(-5 90 300)"><rect x="-10" y="235" width="250" height="150" rx="6" fill="#fff" stroke="#d5dedb"/><rect x="0" y="245" width="230" height="10" fill="#cdd7d3"/><text x="14" y="300" font-size="34" font-weight="800" fill="#aab7b2" font-family="Poppins">BREAKING</text><text x="14" y="338" font-size="34" font-weight="800" fill="#aab7b2" font-family="Poppins">NEWS</text><g stroke="#d5dedb" stroke-width="3"><path d="M14 352h90M14 364h110M130 352h90M140 364h80"/></g></g>
+      <rect x="22" y="40" width="5" height="300" rx="2" fill="#9aa9a3"/><circle cx="24.500" cy="38" r="5" fill="#9aa9a3"/>
+      <g class="wave-flag"><path d="M27 52C70 34 120 70 190 48L186 160C120 184 70 148 27 166Z" fill="url(#gf)"/><path d="M27 52C40 46 52 46 66 52L62 160C50 158 38 160 27 166Z" fill="#fff"/>
+      <circle cx="128" cy="104" r="28" fill="#fff"/><circle cx="138" cy="98" r="24" fill="#0e7340"/>
+      <path d="M154 80l3.500 9.500h10l-8 6 3 9.500-8.500-6-8.500 6 3-9.500-8-6h10z" fill="#fff"/></g>
+      <g class="tower"><path d="M300 345c-30-2-46-14-40-24 14 8 26 6 40 6s26 2 40-6c6 10-10 22-40 24z" fill="url(#gm)"/><path d="M280 330l6-150h28l6 150z" fill="url(#gm)"/><path d="M286 180l-4-30h36l-4 30z" fill="#c5d8d0"/><path d="M290 150l4-60h12l4 60z" fill="url(#gm)"/><path d="M293 90c0-10 14-10 14 0z" fill="#b2cbc0"/><rect x="299" y="50" width="2" height="40" fill="#a8c1b6"/>
+      <g stroke="#a8c1b6" stroke-width="2"><path d="M283 280h34M284 240h32M285 205h30"/></g></g>
+      <g fill="none" stroke="#7f8f89" stroke-width="2" stroke-linecap="round"><path d="M180 80q6-6 12 0q6-6 12 0"/><path d="M430 130q5-5 10 0q5-5 10 0"/><path d="M400 200q4-4 8 0q4-4 8 0"/></g>
+    </svg>
+    <!-- RIGHT: Faisal Mosque, Lahore Fort, FAKE NEWS paper, truck -->
+    <svg class="art right" viewBox="0 0 560 400" preserveAspectRatio="xMaxYMin meet">
+      <defs><linearGradient id="gk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0c79b"/><stop offset="1" stop-color="#c9a974"/></linearGradient></defs>
+      <g opacity=".95">
+        <g fill="#dbe6e1"><path d="M100 330V120l5-40 5 40v210z"/><path d="M130 330V150l4-30 4 30v180z"/><path d="M410 330V130l5-40 5 40v200z"/><path d="M380 330V160l4-30 4 30v170z"/></g>
+        <path d="M150 330l80-150 80 150z" fill="#eef3f1" stroke="#cfdcd6"/><path d="M190 330l40-120 40 120z" fill="#dce7e2"/><path d="M150 330h160v8H150z" fill="#c5d4cd"/><path d="M310 330l70-90v90z" fill="#e6eeea"/><path d="M150 330l-45-80v80z" fill="#e6eeea"/>
+        <g class="fort"><rect x="360" y="190" width="200" height="145" fill="url(#gk)"/><g fill="#c9a974"><rect x="360" y="180" width="14" height="14"/><rect x="384" y="180" width="14" height="14"/><rect x="408" y="180" width="14" height="14"/><rect x="432" y="180" width="14" height="14"/><rect x="456" y="180" width="14" height="14"/><rect x="480" y="180" width="14" height="14"/><rect x="504" y="180" width="14" height="14"/><rect x="528" y="180" width="14" height="14"/></g>
+        <rect x="440" y="130" width="60" height="62" fill="#d4b685"/><path d="M436 130h68l-34-28z" fill="#c4a06a"/><g fill="#9b7a48"><path d="M392 335v-50q15-20 30 0v50z"/><path d="M450 335v-60q20-26 40 0v60z"/><path d="M515 335v-50q15-20 30 0v50z"/></g>
+        <g fill="#5f8f5a" opacity=".9"><circle cx="352" cy="300" r="26"/><circle cx="372" cy="318" r="20"/></g></g>
+      </g>
+      <g class="paper" transform="rotate(7 440 340)"><rect x="330" y="285" width="170" height="110" rx="6" fill="#fff" stroke="#d5dedb"/><path d="M340 298h60M440 298h50" stroke="#cdd7d3" stroke-width="6"/><text x="350" y="342" font-size="30" font-weight="800" fill="#6d7d77" font-family="Poppins" transform="skewX(-6)">FAKE</text><text x="352" y="376" font-size="30" font-weight="800" fill="#6d7d77" font-family="Poppins" transform="skewX(-6)">NEWS?</text></g>
+      <g class="truck" transform="translate(480 262)"><rect x="0" y="10" width="110" height="100" rx="14" fill="#c93c3c"/><rect x="8" y="18" width="94" height="30" rx="6" fill="#f4c542"/><rect x="8" y="54" width="94" height="22" rx="6" fill="#2a74c9"/><g fill="#fff" opacity=".85"><circle cx="22" cy="90" r="6"/><circle cx="42" cy="90" r="6"/><circle cx="62" cy="90" r="6"/><circle cx="82" cy="90" r="6"/></g><g fill="#1a8a5a"><path d="M20 30l8-8 8 8-8 8z"/><path d="M48 30l8-8 8 8-8 8z"/><path d="M76 30l8-8 8 8-8 8z"/></g></g>
+    </svg>
+    <svg class="plane" viewBox="0 0 60 60"><path d="M4 28L56 4 40 56 28 36z" fill="#9fc3df"/><path d="M28 36L56 4 22 30z" fill="#7aa9cc"/></svg>
+    <i class="p" style="left:22%;bottom:34%"></i><i class="p" style="left:48%;bottom:30%;animation-delay:2s"></i><i class="p" style="left:68%;bottom:36%;animation-delay:4s"></i><i class="p" style="left:80%;bottom:28%;animation-delay:6s"></i>
+    <svg class="swoosh" viewBox="0 0 1440 140" preserveAspectRatio="none"><path d="M0 80C260 20 520 120 800 70s460-50 640 0v70H0z" fill="#0b6b3a" opacity=".13"/><path d="M0 100C300 50 540 130 820 92s440-30 620 6v42H0z" fill="#14894c" opacity=".15"/><path d="M0 70C260 20 520 108 800 62s460-44 640 0" fill="none" stroke="#14894c" stroke-width="2" opacity=".5"/></svg>
+  </div>
+  <div class="wrap hero-in">
+    <span class="badge"><i>✔</i> Fight Misinformation <b>•</b> Build an Informed Pakistan</span>
+    <h1>Pakistani Multilingual<br><span>Fake News Detector</span></h1>
+    <p class="d">An Advanced AI-Powered Tool to Detect Fake News in 6 Native Languages<br>(English, Urdu, Sindhi, Punjabi, Saraiki &amp; Roman Urdu).</p>
+    <div class="tag">Read • Verify • Trust</div>
+  </div>
+</header>
+
+<main class="wrap tool" id="about">
+  <div class="card">
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="text" role="tab" aria-selected="true">✎ Text / Link Check</button>
+      <button class="tab" data-tab="url" role="tab" aria-selected="false">🔗 URL Analysis</button>
+    </div>
+
+    <div class="panel active" id="panel-text">
+      <div class="field"><textarea id="newsText" maxlength="5000" placeholder="Paste news content, article text, or a URL here..." aria-label="News text"></textarea><span class="spark">✦</span></div>
+      <div class="meta"><button class="link-btn" id="clearBtn" type="button">✕ Clear</button><span id="counter">0 / 5000</span></div>
+    </div>
+    <div class="panel" id="panel-url">
+      <input class="url" id="newsUrl" type="url" placeholder="Enter a news article URL..." aria-label="News article URL">
+      <p class="hint">ⓘ The article is fetched and analysed automatically. If fetching fails, paste the text in the Text / Link Check tab instead.</p>
+    </div>
+
+    <div class="langs" role="group" aria-label="Select language">
+      <span class="lbl">🌐 Select Language:</span>
+      <button class="lang active" data-lang="en"><i class="fl f-en"></i>English</button>
+      <button class="lang" data-lang="ur"><i class="fl f-pk"></i>Urdu</button>
+      <button class="lang" data-lang="sd"><i class="fl f-sd"></i>Sindhi</button>
+      <button class="lang" data-lang="pa"><i class="fl f-pa"></i>Punjabi</button>
+      <button class="lang" data-lang="skr"><i class="fl f-sk"></i>Saraiki</button>
+      <button class="lang" data-lang="rur"><i class="fl f-ru">UR</i>Roman Urdu</button>
+    </div>
+
+    <div class="row">
+      <button class="adv-btn" id="advBtn" aria-expanded="false" aria-controls="advPanel">⚙ Advanced Options <span>⌄</span></button>
+      <button class="btn" id="analyzeText"><span class="spin"></span>🔍 Analyze News →</button>
+      <button class="btn outline" id="analyzeUrl"><span class="spin"></span>🔗 Analyze URL</button>
+    </div>
+
+    <div class="adv" id="advPanel">
+      <div><b>Input language:</b> <span id="advLang">English</span></div>
+      <div><label><input type="checkbox" id="showDetails" checked> Show analysis details in result</label></div>
+      <div class="note">Confidence is shown only when the model returns it.</div>
+    </div>
+
+    <div class="msg" id="msg" role="alert" hidden></div>
+
+    <div class="result" id="result" hidden aria-live="polite">
+      <div class="res-top"><div class="res-ic" id="resIcon"></div><h3 id="resLabel"></h3><span class="demo" id="demoTag" hidden>DEMO MODE</span></div>
+      <div class="conf" id="confBox" hidden><span>Model confidence: <b id="confVal"></b></span><div class="bar"><i id="confFill" style="width:0"></i></div></div>
+      <div class="grid3" id="resDetails">
+        <div>Language<b id="resLang"></b></div><div>Input type<b id="resType"></b></div><div>Analyzed at<b id="resTime"></b></div>
+        <div id="resSrc" hidden>Source<b></b></div>
+      </div>
+      <p class="disc">This is a machine learning prediction and may be incorrect. It is not independently verified truth. Please verify important news from reliable sources.</p>
+    </div>
+  </div>
+
+  <div class="strip reveal">
+    <div><span class="ic g">🛡</span>AI Powered<br>Detection</div><div><span class="ic g">文A</span>6 Languages<br>Support</div>
+    <div><span class="ic y">⚡</span>Fast<br>Predictions</div><div><span class="ic p">📊</span>Clear Analysis<br>Results</div><div><span class="ic b">🔒</span>User-Friendly<br>Interface</div>
+  </div>
+</main>
+
+<section class="s" id="features"><div class="wrap">
+  <div class="title reveal"><h2>Features</h2><p>What the detector offers</p></div>
+  <div class="cards">
+    <div class="fc reveal"><span class="ic g">🛡</span><h3>AI-Powered Detection</h3><p>A machine learning model classifies news as fake or real.</p></div>
+    <div class="fc reveal"><span class="ic g">文A</span><h3>Six-Language Support</h3><p>English, Urdu, Roman Urdu, Sindhi, Punjabi and Saraiki.</p></div>
+    <div class="fc reveal"><span class="ic b">🔗</span><h3>Text and URL Analysis</h3><p>Paste text or provide an article link where it can be fetched.</p></div>
+    <div class="fc reveal"><span class="ic y">⚡</span><h3>Fast Model Predictions</h3><p>Results appear shortly after you submit.</p></div>
+    <div class="fc reveal"><span class="ic p">📊</span><h3>Clear Analysis Results</h3><p>A clear label with extra details when the model provides them.</p></div>
+    <div class="fc reveal"><span class="ic b">✨</span><h3>User-Friendly Interface</h3><p>Responsive design with light and dark themes.</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="how"><div class="wrap">
+  <div class="title reveal"><h2>How It Works</h2><p>Three simple steps</p></div>
+  <div class="steps">
+    <div class="step reveal"><div class="num">1</div><h3>Enter News</h3><p>Paste news text or provide a supported article URL.</p></div>
+    <div class="step reveal"><div class="num">2</div><h3>AI Analysis</h3><p>The machine learning model processes the input.</p></div>
+    <div class="step reveal"><div class="num">3</div><h3>Review Results</h3><p>View the prediction and any extra output the model supports.</p></div>
+  </div>
+</div></section>
+
+<section class="s"><div class="wrap"><div class="resp reveal"><h3>Responsible Use</h3><p>Predictions come from a machine learning model and can be wrong. They are not proof that a claim is true or false. Always check important news with reliable, independent sources before sharing.</p></div></div></section>
+
+<footer id="contact"><div class="wrap">
+  <div class="fg">
+    <div><h4>FakeNews Detector</h4><p>A multilingual fake news detection project for Pakistani languages, built as a Data Science portfolio project.</p></div>
+    <div><h4>Languages</h4><ul><li>English</li><li>Urdu</li><li>Roman Urdu</li><li>Sindhi</li><li>Punjabi</li><li>Saraiki</li></ul></div>
+    <div><h4>Links</h4><ul><li><a href="https://github.com/Muqadas-g" target="_blank" rel="noopener">GitHub</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact: your-email@example.com</a></li></ul></div>
+  </div>
+  <div class="copy">© <span id="year"></span> FakeNews Detector. Predictions may be incorrect; verify important news independently.</div>
+</div></footer>
+
+<div class="ticker"><b>📢 Latest News</b><span class="dot">•</span><span id="tickerText">Stay informed! Verify news before you share.</span><span class="dot">•</span><span class="t2">Together for a fact-checked Pakistan. 🇵🇰</span></div>
+<script src="api.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
